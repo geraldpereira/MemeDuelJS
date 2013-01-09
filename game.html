@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel=StyleSheet href="css/cursors.css" type="text/css" media="screen" />
+<link rel=StyleSheet href="css/general.css" type="text/css" media="screen" />
+<link rel=StyleSheet href="css/editor.css" type="text/css" media="screen" />
+<title>Meme Duel</title>
+</head>
+<body>
+	<div id="game" class="game">
+		<div id="game_editor_toggle"  class="game-editor-toggle"></div>
+		<div class="game-editor-container">
+			<div id="editor" class="game-editor">
+				<div id="shape" class="game-editor-shape">
+				</div>
+				<div id="type" class="game-editor-type">
+				</div>
+				<div style="clear:both"></div>
+				<canvas id="canvas_editor" class="game-editor-canvas" width="150" height="100"></canvas>
+			</div>			
+		</div>
+		<div class="game-canvas-container">
+			<canvas id="canvas" width="640" height="480" class="game-canvas"></canvas>
+		</div>
+	</div>
+	
+	<div id="configuration" class="configuration">
+		<select id="resolutions">
+			<option id="res1" selected="selected">640 * 480</option>
+			<option id="res2">800 * 600</option>
+			<option id="res3">1024 * 768</option>
+		</select> 
+		<br/>
+		<input type="checkbox" id="displayShadows" value="displayShadows" />Display shadows ?<br/>
+		<input type="checkbox" id="roundPositions" value="roundPositions" checked/>Round positions ?<br/>
+		<input type="checkbox" id="damageObjects" value="damageObjects"/>Damage objects ?<br/>
+	</div>
+	
+	<div style="clear:both"></div>
+
+	<div id="console"></div>
+		
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="game/Box2dWeb-2.1.a.3.min.js"></script>
+	<script type="text/javascript" src="game/MemeDuel.js"></script>
+</body>
+</html>

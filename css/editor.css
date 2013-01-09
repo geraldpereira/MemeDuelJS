@@ -1,0 +1,77 @@
+@CHARSET "ISO-8859-1";
+
+.game-editor-container {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	z-index: 2;
+	background-color: #B69A6C;
+	border: 2px solid #2E1811;
+	border-radius: 5px;
+	-moz-border-radius: 5px; /* Firefox 3.6 and earlier */
+	padding: 5px;
+	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.game-editor {
+}
+
+.game-editor-canvas {
+	border: 2px solid #2E1811;
+	background-color: #DDD396;
+}
+
+.game-editor-toggle {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	z-index: 3;
+	background-repeat: no-repeat;
+	background-image: url("../images/editor.png");
+}
+
+.game-editor-toggle:hover {
+	background-image: url("../images/editorHover.png") !important;
+}
+	
+.game-editor-shape {
+	float: left;
+	cursor: pointer;
+	margin-left: 25px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+
+.game-editor-shape-box {
+	background-image: url("../images/box.png");
+}
+
+.game-editor-shape-polygon {
+	background-image: url("../images/polygon.png");
+}
+
+.game-editor-shape-circle {
+	background-image: url("../images/circle.png");
+}
+
+.game-editor-type {
+	float: left;
+	cursor: pointer;
+	margin-left: 25px;
+	margin-bottom: 5px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+
+.game-editor-type-wood {
+	background-image: url("../game/images/wood.png");
+}
+
+.game-editor-type-stone {
+	background-image: url("../game/images/stone.png");
+}

@@ -1,0 +1,46 @@
+@CHARSET "ISO-8859-1";
+
+.configuration {
+	margin-left: auto;
+	margin-right: auto;
+	width : 330px;
+}
+
+.configuration-min {
+	float:left;
+	width:60px;
+	height:20px;
+	border: 1px solid black;
+}
+
+.configuration-low {
+	float:left;
+	width:60px;
+	height:20px;
+	margin-left: 5px;
+	border: 1px solid black;
+}
+
+.configuration-medium {
+	float:left;
+	width:60px;
+	height:20px;
+	margin-left: 5px;
+	border: 1px solid black;
+}
+
+.configuration-high {
+	float:left;
+	width:60px;
+	height:20px;
+	margin-left: 5px;
+	border: 1px solid black;
+}
+
+.configuration-max {
+	float:left;
+	width:60px;
+	height:20px;
+	margin-left: 5px;
+	border: 1px solid black;
+}

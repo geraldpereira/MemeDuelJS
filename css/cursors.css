@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+.cursor-pointer {
+	cursor: pointer !important;
+}
+
+.cursor-move {
+	cursor: move !important;
+}
+
+.cursor-default {
+	cursor: default !important;
+}

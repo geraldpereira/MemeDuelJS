@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel=StyleSheet href="css/cursors.css" type="text/css" media="screen" />
+<link rel=StyleSheet href="css/general.css" type="text/css" media="screen" />
+<link rel=StyleSheet href="css/editor.css" type="text/css" media="screen" />
+<link rel=StyleSheet href="css/configuration.css" type="text/css" media="screen" />
+
+<title>Meme Duel</title>
+</head>
+<body>
+	<div id="game" class="game">
+		<div id="game_editor_toggle"  class="game-editor-toggle"></div>
+		<div class="game-editor-container">
+			<div id="editor" class="game-editor">
+				<div id="shape" class="game-editor-shape">
+				</div>
+				<div id="type" class="game-editor-type">
+				</div>
+				<div style="clear:both"></div>
+				<canvas id="canvas_editor" class="game-editor-canvas" width="150" height="100"></canvas>
+			</div>			
+		</div>
+		<div class="game-canvas-container">
+			<canvas id="canvas" width="640" height="480" class="game-canvas"></canvas>
+		</div>
+	</div>
+	
+	<div style="clear:both"></div>
+	
+	<div id="configuration" class="configuration">
+		<div id="min" class="configuration-min">Min</div>
+		<div id="low" class="configuration-low">Low</div>
+		<div id="medium" class="configuration-medium">Medium</div>
+		<div id="high" class="configuration-high">High</div>
+		<div id="max" class="configuration-max">Max</div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div id="console"></div>
+	
+	<input type="checkbox" id="damageObjects" value="damageObjects"/>Damage objects ?<br/>
+	
+	<canvas id="canvas_debug" width="1120" height="480"
+		style="background-color: white;"></canvas>
+		
+	<script type="text/javascript" src="game/ext/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+	<script type="text/javascript" src="game/ext/Box2dWeb-2.1.a.3.js"></script>
+	<script type="text/javascript" src="game/Utils.js"></script>
+	<script type="text/javascript" src="game/Constants.js"></script>
+
+	<script type="text/javascript" src="game/images/Images.js"></script>
+	
+	<script type="text/javascript" src="game/controller/XY.js"></script>
+	<script type="text/javascript" src="game/controller/MousePosition.js"></script>
+	<script type="text/javascript" src="game/controller/Controller.js"></script>
+	<script type="text/javascript" src="game/controller/ConfigurationManager.js"></script>
+	<script type="text/javascript" src="game/controller/ConfigurationConstants.js"></script>
+	
+	<script type="text/javascript" src="game/editor/EditorController.js"></script>
+	<script type="text/javascript" src="game/editor/GODFactory.js"></script>
+	<script type="text/javascript" src="game/editor/CircleDefFactory.js"></script>
+	<script type="text/javascript" src="game/editor/BoxDefFactory.js"></script>
+	<script type="text/javascript" src="game/editor/PolygonDefFactory.js"></script>
+	<script type="text/javascript" src="game/editor/GODShapeConstants.js"></script>
+	<script type="text/javascript" src="game/editor/GODTypeConstants.js"></script>
+	<script type="text/javascript" src="game/editor/GODEnvConstants.js"></script>
+	<script type="text/javascript" src="game/editor/GODUtils.js"></script>
+
+	<script type="text/javascript" src="game/model/ModelObject.js"></script>
+	<script type="text/javascript" src="game/model/BoxModelObject.js"></script>
+	<script type="text/javascript" src="game/model/PolygonModelObject.js"></script>
+	<script type="text/javascript" src="game/model/FragmentModelObject.js"></script>
+	<script type="text/javascript" src="game/model/CircleModelObject.js"></script>
+	<script type="text/javascript" src="game/model/ModelUtils.js"></script>
+	<script type="text/javascript" src="game/model/ModelObjectExploder.js"></script>
+	<script type="text/javascript" src="game/model/Model.js"></script>
+
+	<script type="text/javascript" src="game/view/ViewObject.js"></script>
+	<script type="text/javascript" src="game/view/DynamicViewObject.js"></script>
+	<script type="text/javascript" src="game/view/AnimatedViewObject.js"></script>
+	<script type="text/javascript" src="game/view/ConsoleViewObject.js"></script>
+	<script type="text/javascript" src="game/view/BodyViewObject.js"></script>
+	<script type="text/javascript" src="game/view/BoxViewObject.js"></script>
+	<script type="text/javascript" src="game/view/PolygonViewObject.js"></script>
+	<script type="text/javascript" src="game/view/CircleViewObject.js"></script>
+	<script type="text/javascript" src="game/view/SunViewObject.js"></script>
+	<script type="text/javascript" src="game/view/StaticViewObject.js"></script>
+	<script type="text/javascript" src="game/view/RepeatXViewObject.js"></script>
+	<script type="text/javascript" src="game/view/PerspectiveViewObject.js"></script>
+	<script type="text/javascript" src="game/view/View.js"></script>
+	<script type="text/javascript" src="game/Launcher.js"></script>
+</body>
+</html>
